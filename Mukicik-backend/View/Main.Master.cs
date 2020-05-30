@@ -32,8 +32,7 @@ namespace Mukicik.View
             string userSession = Session["userSession"].ToString();
             int userRole = userRepository.userRoleIdentifier(userSession);
 
-            label_userSession.Text = userSession + "   privelege :  ";
-            label_userRole.Text = userRole.ToString();
+            label_userSession.Text = userSession;
             button_register.Visible = false;
             button_login2.Text = "Logout";
             button_cart.Visible = true;
